@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Cell Information</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Battery Cell Information</h1>
+    
+    <div id="upload-section">
+        <label for="imageUpload">Upload Battery Cell Image:</label>
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <label for="dataUpload">Upload Data File:</label>
+        <input type="file" id="dataUpload" accept=".csv">
+    </div>
+    
+    <div id="meta-information">
+        <!-- Add form inputs for each piece of meta information here -->
+        <label for="cellCondition">Cell Condition:</label>
+        <select id="cellCondition">
+            <option value="Recycled">Recycled</option>
+            <option value="New">New</option>
+        </select>
+        <!-- Repeat for other meta information fields -->
+    </div>
+    
+    <button onclick="generateAndDisplayID()">Generate Cell ID and Barcode</button>
+    
+    <div id="display-area">
+        <!-- Elements to display the generated Cell ID, barcode, and uploaded image will go here -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
